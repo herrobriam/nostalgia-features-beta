@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "nostalgia-features-beta",
+	"version": "${version}",
+	"name": "Nostalgia Features: Beta",
+	"description": "Removes some generation features that aren't from Beta.",
+	"authors": [
+		"herrobriam"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/nostalgia-features-beta",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nostalgia-features-beta/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.herrobriam.nostalgiafeaturesbeta.NostalgiaFeaturesBeta"
+		],
+		"fabric-datagen": [
+			"net.herrobriam.nostalgiafeaturesbeta.NostalgiaFeaturesBetaDataGenerator"
+		]
+	},
+	"mixins": [
+		"nostalgia-features-beta.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": ">=1.18",
+		"java": ">=11"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
